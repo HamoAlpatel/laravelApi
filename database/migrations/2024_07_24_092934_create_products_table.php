@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('detail');
             $table->float('price');
             $table->integer('stock');
-            $table->float('descount');
+            $table->float('discount');
             $table->timestamps();
         });
     }
