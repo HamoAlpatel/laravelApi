@@ -27,11 +27,11 @@ SET time_zone = "+00:00";
 -- Table structure for table `cache`
 --
 
-CREATE TABLE `cache` (
-  `key` varchar(255) NOT NULL,
-  `value` mediumtext NOT NULL,
-  `expiration` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+-- CREATE TABLE `cache` (
+--   `key` varchar(255) NOT NULL,
+--   `value` mediumtext NOT NULL,
+--   `expiration` int(11) NOT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -39,11 +39,11 @@ CREATE TABLE `cache` (
 -- Table structure for table `cache_locks`
 --
 
-CREATE TABLE `cache_locks` (
-  `key` varchar(255) NOT NULL,
-  `owner` varchar(255) NOT NULL,
-  `expiration` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+-- CREATE TABLE `cache_locks` (
+--   `key` varchar(255) NOT NULL,
+--   `owner` varchar(255) NOT NULL,
+--   `expiration` int(11) NOT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -51,15 +51,15 @@ CREATE TABLE `cache_locks` (
 -- Table structure for table `failed_jobs`
 --
 
-CREATE TABLE `failed_jobs` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `uuid` varchar(255) NOT NULL,
-  `connection` text NOT NULL,
-  `queue` text NOT NULL,
-  `payload` longtext NOT NULL,
-  `exception` longtext NOT NULL,
-  `failed_at` timestamp NOT NULL DEFAULT current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+-- CREATE TABLE `failed_jobs` (
+--   `id` bigint(20) UNSIGNED NOT NULL,
+--   `uuid` varchar(255) NOT NULL,
+--   `connection` text NOT NULL,
+--   `queue` text NOT NULL,
+--   `payload` longtext NOT NULL,
+--   `exception` longtext NOT NULL,
+--   `failed_at` timestamp NOT NULL DEFAULT current_timestamp()
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -67,15 +67,15 @@ CREATE TABLE `failed_jobs` (
 -- Table structure for table `jobs`
 --
 
-CREATE TABLE `jobs` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `queue` varchar(255) NOT NULL,
-  `payload` longtext NOT NULL,
-  `attempts` tinyint(3) UNSIGNED NOT NULL,
-  `reserved_at` int(10) UNSIGNED DEFAULT NULL,
-  `available_at` int(10) UNSIGNED NOT NULL,
-  `created_at` int(10) UNSIGNED NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+-- CREATE TABLE `jobs` (
+--   `id` bigint(20) UNSIGNED NOT NULL,
+--   `queue` varchar(255) NOT NULL,
+--   `payload` longtext NOT NULL,
+--   `attempts` tinyint(3) UNSIGNED NOT NULL,
+--   `reserved_at` int(10) UNSIGNED DEFAULT NULL,
+--   `available_at` int(10) UNSIGNED NOT NULL,
+--   `created_at` int(10) UNSIGNED NOT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -83,18 +83,18 @@ CREATE TABLE `jobs` (
 -- Table structure for table `job_batches`
 --
 
-CREATE TABLE `job_batches` (
-  `id` varchar(255) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `total_jobs` int(11) NOT NULL,
-  `pending_jobs` int(11) NOT NULL,
-  `failed_jobs` int(11) NOT NULL,
-  `failed_job_ids` longtext NOT NULL,
-  `options` mediumtext DEFAULT NULL,
-  `cancelled_at` int(11) DEFAULT NULL,
-  `created_at` int(11) NOT NULL,
-  `finished_at` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+-- CREATE TABLE `job_batches` (
+--   `id` varchar(255) NOT NULL,
+--   `name` varchar(255) NOT NULL,
+--   `total_jobs` int(11) NOT NULL,
+--   `pending_jobs` int(11) NOT NULL,
+--   `failed_jobs` int(11) NOT NULL,
+--   `failed_job_ids` longtext NOT NULL,
+--   `options` mediumtext DEFAULT NULL,
+--   `cancelled_at` int(11) DEFAULT NULL,
+--   `created_at` int(11) NOT NULL,
+--   `finished_at` int(11) DEFAULT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -102,11 +102,11 @@ CREATE TABLE `job_batches` (
 -- Table structure for table `migrations`
 --
 
-CREATE TABLE `migrations` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `migration` varchar(255) NOT NULL,
-  `batch` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+-- CREATE TABLE `migrations` (
+--   `id` int(10) UNSIGNED NOT NULL,
+--   `migration` varchar(255) NOT NULL,
+--   `batch` int(11) NOT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `migrations`
@@ -126,11 +126,11 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 -- Table structure for table `password_reset_tokens`
 --
 
-CREATE TABLE `password_reset_tokens` (
-  `email` varchar(255) NOT NULL,
-  `token` varchar(255) NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+-- CREATE TABLE `password_reset_tokens` (
+--   `email` varchar(255) NOT NULL,
+--   `token` varchar(255) NOT NULL,
+--   `created_at` timestamp NULL DEFAULT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -138,18 +138,18 @@ CREATE TABLE `password_reset_tokens` (
 -- Table structure for table `personal_access_tokens`
 --
 
-CREATE TABLE `personal_access_tokens` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `tokenable_type` varchar(255) NOT NULL,
-  `tokenable_id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `token` varchar(64) NOT NULL,
-  `abilities` text DEFAULT NULL,
-  `last_used_at` timestamp NULL DEFAULT NULL,
-  `expires_at` timestamp NULL DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+-- CREATE TABLE `personal_access_tokens` (
+--   `id` bigint(20) UNSIGNED NOT NULL,
+--   `tokenable_type` varchar(255) NOT NULL,
+--   `tokenable_id` bigint(20) UNSIGNED NOT NULL,
+--   `name` varchar(255) NOT NULL,
+--   `token` varchar(64) NOT NULL,
+--   `abilities` text DEFAULT NULL,
+--   `last_used_at` timestamp NULL DEFAULT NULL,
+--   `expires_at` timestamp NULL DEFAULT NULL,
+--   `created_at` timestamp NULL DEFAULT NULL,
+--   `updated_at` timestamp NULL DEFAULT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -157,16 +157,16 @@ CREATE TABLE `personal_access_tokens` (
 -- Table structure for table `products`
 --
 
-CREATE TABLE `products` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `detail` text NOT NULL,
-  `price` double NOT NULL,
-  `stock` int(11) NOT NULL,
-  `discount` double NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+-- CREATE TABLE `products` (
+--   `id` bigint(20) UNSIGNED NOT NULL,
+--   `name` varchar(255) NOT NULL,
+--   `detail` text NOT NULL,
+--   `price` double NOT NULL,
+--   `stock` int(11) NOT NULL,
+--   `discount` double NOT NULL,
+--   `created_at` timestamp NULL DEFAULT NULL,
+--   `updated_at` timestamp NULL DEFAULT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `products`
@@ -230,15 +230,15 @@ INSERT INTO `products` (`id`, `name`, `detail`, `price`, `stock`, `discount`, `c
 -- Table structure for table `reviews`
 --
 
-CREATE TABLE `reviews` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `product_id` bigint(20) UNSIGNED NOT NULL,
-  `customer` varchar(255) NOT NULL,
-  `review` text NOT NULL,
-  `star` int(11) NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+-- CREATE TABLE `reviews` (
+--   `id` bigint(20) UNSIGNED NOT NULL,
+--   `product_id` bigint(20) UNSIGNED NOT NULL,
+--   `customer` varchar(255) NOT NULL,
+--   `review` text NOT NULL,
+--   `star` int(11) NOT NULL,
+--   `created_at` timestamp NULL DEFAULT NULL,
+--   `updated_at` timestamp NULL DEFAULT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `reviews`
@@ -348,7 +348,7 @@ INSERT INTO `reviews` (`id`, `product_id`, `customer`, `review`, `star`, `create
 (101, 50, 'Prof. Caleb Bednar I', 'Esse eum modi vero id. Sed et eos quis ullam eligendi. Voluptatem quo et perferendis architecto. Molestias aliquid fugit vel deserunt.', 4, '2024-07-24 07:41:18', '2024-07-24 07:41:18'),
 (102, 38, 'Nakia Abernathy', 'Asperiores et id suscipit esse debitis. Aut facere excepturi maxime voluptatum veniam voluptas inventore. Culpa molestiae quis exercitationem autem quae. Qui ut aperiam quia voluptate dolore amet cum.', 4, '2024-07-24 07:41:18', '2024-07-24 07:41:18'),
 (103, 39, 'Joel Heaney', 'Quis unde officia cupiditate deleniti. Est temporibus expedita eaque voluptate. Sequi corrupti sed quas eveniet laboriosam at dolorum.', 2, '2024-07-24 07:41:18', '2024-07-24 07:41:18'),
-(104, 27, 'Jane O\'Conner', 'Sed in ratione cumque commodi expedita. Pariatur eligendi nisi suscipit dicta illo distinctio.', 5, '2024-07-24 07:41:18', '2024-07-24 07:41:18'),
+(104, 27, 'Jane O\Conner', 'Sed in ratione cumque commodi expedita. Pariatur eligendi nisi suscipit dicta illo distinctio.', 5, '2024-07-24 07:41:18', '2024-07-24 07:41:18'),
 (105, 22, 'Yasmin Torp V', 'Sequi placeat enim illo praesentium enim. Nisi eos dolores officia exercitationem aspernatur. Qui ex sed non. Recusandae accusamus dolorem quaerat optio recusandae repellat.', 0, '2024-07-24 07:41:18', '2024-07-24 07:41:18'),
 (106, 8, 'Deanna Johns DVM', 'Quo harum nesciunt ipsam dolore. Et voluptatem numquam vero quia. In asperiores ea officia. Voluptate quidem voluptatem ullam odit vel deserunt accusamus.', 3, '2024-07-24 07:41:18', '2024-07-24 07:41:18'),
 (107, 49, 'Ivah Aufderhar', 'Earum vel eum accusamus odit dolorem necessitatibus rerum. Illum sit consequuntur saepe quia. Sunt voluptatibus necessitatibus et dolores veritatis libero.', 5, '2024-07-24 07:41:18', '2024-07-24 07:41:18'),
@@ -453,6 +453,7 @@ INSERT INTO `reviews` (`id`, `product_id`, `customer`, `review`, `star`, `create
 (206, 39, 'Katharina Oberbrunner IV', 'A dignissimos aut nostrum error inventore inventore. Commodi itaque autem autem aliquam aspernatur voluptatem ut. Aspernatur ea accusantium ad dicta sed dolor.', 2, '2024-07-24 07:41:18', '2024-07-24 07:41:18'),
 (207, 34, 'Lincoln Heaney IV', 'Rerum ut eos quis cum dolores dolores et. Omnis officiis harum vitae nobis doloribus sed sit repellendus. Cupiditate dolor quam quia non ut. Error aut commodi consequuntur qui rerum repellendus.', 1, '2024-07-24 07:41:18', '2024-07-24 07:41:18'),
 (208, 1, 'Prof. Kaleigh Feil', 'Omnis consequatur asperiores quisquam ut iste in. Enim est commodi sit eos necessitatibus pariatur. Velit autem et dolor asperiores quos.', 5, '2024-07-24 07:41:18', '2024-07-24 07:41:18');
+
 INSERT INTO `reviews` (`id`, `product_id`, `customer`, `review`, `star`, `created_at`, `updated_at`) VALUES
 (209, 37, 'Melissa Stroman DVM', 'Repellendus consequatur deserunt maxime earum. Quis modi esse labore aperiam ut magnam harum rerum. Animi animi impedit nobis maxime fugit possimus et.', 0, '2024-07-24 07:41:18', '2024-07-24 07:41:18'),
 (210, 37, 'Scot Kunze V', 'Rerum veniam cupiditate ut officiis. Sed quibusdam incidunt et ut odio minus iure. Velit natus sed officia repellat est ut labore alias.', 3, '2024-07-24 07:41:18', '2024-07-24 07:41:18'),
